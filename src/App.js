@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import UserInput from "./components/UserInput";
+import UsersList from "./components/UsersList";
 
 const users = [
   "Manoj Singh Negi",
@@ -46,26 +48,17 @@ function App() {
 
   return (
     <div className="container">
-      <div className="input-container">
-        <input
-          className="mt-5 input"
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-      </div>
-      <div className={`dropdown ${isDropdownOpen ? 'is-active' : ''} `}>
-        <div className="dropdown-menu" id="dropdown-menu" role="menu">
-          <div className="dropdown-content">
-            {filteredUsers.map((user, index) => (
-              <a key={index} onClick={() => setUsername(user)} className={`dropdown-item ${currentIndex === index ? 'is-active' : ''}`}>
-                {user}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+      <UserInput
+        setUser={setUsername}
+        value={username}
+        onKeyDown={handleKeyDown}
+      />
+      <UsersList
+        isListVisible={isDropdownOpen}
+        users={filteredUsers}
+        onSelect={setUsername}
+        currentIndex={currentIndex}
+      />
     </div>
   );
 }

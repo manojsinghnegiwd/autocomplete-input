@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders user input 1`] = `
+<div
+  className="dropdown is-active "
+>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+  >
+    <div
+      className="dropdown-content"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders user input when isListVisible is false 1`] = `
+<div
+  className="dropdown  "
+>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <a
+        className="dropdown-item is-active"
+        onClick={[Function]}
+      >
+        Manoj Singh Negi
+      </a>
+      <a
+        className="dropdown-item "
+        onClick={[Function]}
+      >
+        Ross Geller
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders user input when users list is provided 1`] = `
+<div
+  className="dropdown is-active "
+>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <a
+        className="dropdown-item is-active"
+        onClick={[Function]}
+      >
+        Manoj Singh Negi
+      </a>
+      <a
+        className="dropdown-item "
+        onClick={[Function]}
+      >
+        Ross Geller
+      </a>
+    </div>
+  </div>
+</div>
+`;

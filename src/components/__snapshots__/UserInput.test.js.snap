@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders user input 1`] = `
+<div
+  className="input-container"
+>
+  <input
+    className="mt-5 input"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Search users"
+    type="text"
+    value="Ross"
+  />
+</div>
+`;
